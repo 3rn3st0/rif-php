@@ -36,7 +36,7 @@ php -r "require 'vendor/autoload.php'; echo ErnestoCh\Rif\Rif::isValid('V1135029
 
 require_once 'vendor/autoload.php';
 
-use TurecoLabs\Rif\Rif;
+use ErnestoCh\Rif\Rif;
 
 // Validación simple
 if (Rif::isValid('V113502963')) {
@@ -50,7 +50,7 @@ try {
     echo "Tipo: " . $rif->getType()->getDescription();
     echo "Número: " . $rif->getNumber();
     echo "Dígito verificador: " . $rif->getCheckDigit();
-} catch (TurecoLabs\Rif\Exceptions\RifValidationException $e) {
+} catch (ErnestoCh\Rif\Exceptions\RifValidationException $e) {
     echo "Error: " . $e->getMessage();
 }
 
@@ -75,8 +75,8 @@ La librería incluye múltiples formateadores para diferentes contextos:
 ```php
 <?php
 
-use TurecoLabs\Rif\Rif;
-use TurecoLabs\Rif\Formatters\RifFormatter;
+use ErnestoCh\Rif\Rif;
+use ErnestoCh\Rif\Formatters\RifFormatter;
 
 $rif = Rif::create('J000029679');
 
@@ -111,8 +111,8 @@ Genera RIFs válidos para testing y desarrollo:
 ```php
 <?php
 
-use TurecoLabs\Rif\Rif;
-use TurecoLabs\Rif\Types\RifType;
+use ErnestoCh\Rif\Rif;
+use ErnestoCh\Rif\Types\RifType;
 
 // Generar un RIF aleatorio
 $rif = Rif::generate();
@@ -133,7 +133,7 @@ $rif = Rif::generateSequential(42, RifType::NATURAL);
 echo $rif->getRaw(); // V00000042X
 
 // Usar el generador directamente
-use TurecoLabs\Rif\Services\RifGenerator;
+use ErnestoCh\Rif\Services\RifGenerator;
 
 $rif = RifGenerator::generateOneOfEachType();
 foreach ($rif as $type => $rifInstance) {
@@ -158,8 +158,8 @@ Valida la estructura de un RIF sin verificar el dígito verificador:
 ```php
 <?php
 
-use TurecoLabs\Rif\Rif;
-use TurecoLabs\Rif\Validators\FormatValidator;
+use ErnestoCh\Rif\Rif;
+use ErnestoCh\Rif\Validators\FormatValidator;
 
 // Validar estructura completa (pero sin dígito verificador)
 if (Rif::isValidFormat('J123456789')) {
