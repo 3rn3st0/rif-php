@@ -5,7 +5,6 @@
     "keywords": ["rif", "venezuela", "validación", "fiscal", "seniat", "contribuyente"],
     "homepage": "https://github.com/3rn3st0/rif-php",
     "license": "MIT",
-    "version": "1.0.0",
     "authors": [
         {
             "name": "Ernesto Chapon",
