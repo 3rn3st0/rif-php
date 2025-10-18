@@ -23,6 +23,12 @@ Una librería PHP profesional para validar, formatear y generar números RIF (Re
 composer require ernestoch/rif-php
 ```
 
+### Probar instalación
+
+```bash
+php -r "require 'vendor/autoload.php'; echo ErnestoCh\Rif\Rif::isValid('V113502963') ? '✅ Instalación exitosa!' : '❌ Error';"
+```
+
 ## 🚀 Uso Rápido
 
 ```php
