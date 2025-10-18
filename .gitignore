@@ -1,0 +1,22 @@
+/vendor/
+/composer.lock
+/coverage/
+.phpunit.cache/
+.phpunit.result.cache
+.DS_Store
+.idea/
+*.log
+
+# IDE
+.vscode/
+.phpintel/
+.idea/
+*.swp
+*.swo
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
