@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace TurecoLabs\Rif\Validators;
+namespace ErnestoCh\Rif\Validators;
 
-use TurecoLabs\Rif\Types\RifType;
+use ErnestoCh\Rif\Types\RifType;
 
 final class FormatValidator
 {

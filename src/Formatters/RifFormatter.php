@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace TurecoLabs\Rif\Formatters;
+namespace ErnestoCh\Rif\Formatters;
 
-use TurecoLabs\Rif\Rif;
+use ErnestoCh\Rif\Rif;
 
 final class RifFormatter
 {

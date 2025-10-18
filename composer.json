@@ -1,7 +1,7 @@
 {
     "name": "ernestoch/rif-php",
-    "type": "library",
     "description": "Librería PHP para validar, formatear y generar números RIF (Registro de Información Fiscal) de Venezuela",
+    "type": "library",
     "keywords": ["rif", "venezuela", "validación", "fiscal", "seniat", "contribuyente"],
     "homepage": "https://github.com/3rn3st0/rif-php",
     "license": "MIT",
@@ -9,7 +9,7 @@
     "authors": [
         {
             "name": "Ernesto Chapon",
-            "email": "ernesto@turecolabs.com",
+            "email": "ernestochapon@gmail.com",
             "homepage": "https://github.com/3rn3st0",
             "role": "Developer"
         }
@@ -23,12 +23,12 @@
     },
     "autoload": {
         "psr-4": {
-            "TurecoLabs\\Rif\\": "src/"
+            "ErnestoCh\\Rif\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "TurecoLabs\\Rif\\Tests\\": "tests/"
+            "ErnestoCh\\Rif\\Tests\\": "tests/"
         }
     },
     "scripts": {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace TurecoLabs\Rif\Exceptions;
+namespace ErnestoCh\Rif\Exceptions;
 
 class RifValidationException extends \DomainException
 {

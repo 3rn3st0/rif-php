@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace TurecoLabs\Rif\Tests\Unit;
+namespace ErnestoCh\Rif\Tests\Unit;
 
 use PHPUnit\Framework\TestCase;
-use TurecoLabs\Rif\Rif;
-use TurecoLabs\Rif\Formatters\RifFormatter;
+use ErnestoCh\Rif\Rif;
+use ErnestoCh\Rif\Formatters\RifFormatter;
 
 class RifFormatterTest extends TestCase
 {

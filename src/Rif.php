@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace TurecoLabs\Rif;
+namespace ErnestoCh\Rif;
 
-use TurecoLabs\Rif\Exceptions\RifValidationException;
-use TurecoLabs\Rif\Formatters\RifFormatter;
-use TurecoLabs\Rif\Services\RifGenerator;
-use TurecoLabs\Rif\Types\RifType;
-use TurecoLabs\Rif\Validators\FormatValidator;
+use ErnestoCh\Rif\Exceptions\RifValidationException;
+use ErnestoCh\Rif\Formatters\RifFormatter;
+use ErnestoCh\Rif\Services\RifGenerator;
+use ErnestoCh\Rif\Types\RifType;
+use ErnestoCh\Rif\Validators\FormatValidator;
 
 final class Rif
 {

@@ -2,7 +2,7 @@
 
 require_once 'vendor/autoload.php';
 
-use TurecoLabs\Rif\Rif;
+use ErnestoCh\Rif\Rif;
 
 // Validación simple
 if (Rif::isValid('J123456789')) {
@@ -14,6 +14,6 @@ try {
     $rif = Rif::create('J123456789');
     echo "RIF: " . $rif->getRaw();
     echo "Tipo: " . $rif->getType()->getDescription();
-} catch (TurecoLabs\Rif\Exceptions\RifValidationException $e) {
+} catch (ErnestoCh\Rif\Exceptions\RifValidationException $e) {
     echo "Error: " . $e->getMessage();
 }

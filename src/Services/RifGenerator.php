@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace TurecoLabs\Rif\Services;
+namespace ErnestoCh\Rif\Services;
 
-use TurecoLabs\Rif\Rif;
-use TurecoLabs\Rif\Types\RifType;
-use TurecoLabs\Rif\Exceptions\RifValidationException;
+use ErnestoCh\Rif\Rif;
+use ErnestoCh\Rif\Types\RifType;
+use ErnestoCh\Rif\Exceptions\RifValidationException;
 
 final class RifGenerator
 {
