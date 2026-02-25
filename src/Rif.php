@@ -1,4 +1,4 @@
-<?php
+    <?php
 
 declare(strict_types=1);
 
@@ -114,17 +114,17 @@ final class Rif
         };
     }
 
-    public static function generate(RifType $type = null): self
+    public static function generate(?RifType $type = null): self
     {
         return RifGenerator::generate($type);
     }
 
-    public static function generateMultiple(int $count, RifType $type = null): array
+    public static function generateMultiple(int $count, ?RifType $type = null): array
     {
         return RifGenerator::generateMultiple($count, $type);
     }
 
-    public static function generateSequential(int $sequence, RifType $type = null): self
+    public static function generateSequential(int $sequence, ?RifType $type = null): self
     {
         return RifGenerator::generateSequential($sequence, $type);
     }
