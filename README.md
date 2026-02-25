@@ -1,6 +1,6 @@
 # RIF PHP
 
-[![PHP Version](https://img.shields.io/badge/php-8.3%2B-blue.svg)](https://packagist.org/packages/ernestoch/rif-php)
+[![PHP Version](https://img.shields.io/badge/php-8.1%2B-blue.svg)](https://packagist.org/packages/ernestoch/rif-php)
 [![Tests](https://github.com/3rn3st0/rif-php/actions/workflows/tests.yml/badge.svg)](https://github.com/3rn3st0/rif-php/actions/workflows/tests.yml)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Packagist Version](https://img.shields.io/packagist/v/ernestoch/rif-php)](https://packagist.org/packages/ernestoch/rif-php)
