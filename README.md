@@ -1,9 +1,9 @@
 # RIF PHP
 
-[![PHP Version](https://img.shields.io/badge/php-8.1%2B-blue.svg)](https://packagist.org/packages/ernestoch/rif-php)
+[![PHP Version](https://img.shields.io/badge/php-8.1%2B-blue.svg)](https://packagist.org/packages/ernestochapon/rif-php)
 [![Tests](https://github.com/3rn3st0/rif-php/actions/workflows/tests.yml/badge.svg)](https://github.com/3rn3st0/rif-php/actions/workflows/tests.yml)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![Packagist Version](https://img.shields.io/packagist/v/ernestoch/rif-php)](https://packagist.org/packages/ernestoch/rif-php)
+[![Packagist Version](https://img.shields.io/packagist/v/ernestochapon/rif-php)](https://packagist.org/packages/ernestochapon/rif-php)
 
 Una librería PHP profesional para validar, formatear y generar números RIF (Registro de Información Fiscal) de Venezuela.
 
@@ -21,13 +21,13 @@ Una librería PHP profesional para validar, formatear y generar números RIF (Re
 ## 📦 Instalación
 
 ```bash
-composer require ernestoch/rif-php
+composer require ernestochapon/rif-php
 ```
 
 ### Probar instalación
 
 ```bash
-php -r "require 'vendor/autoload.php'; echo ErnestoCh\Rif\Rif::isValid('V113502963') ? '✅ Instalación exitosa!' : '❌ Error';"
+php -r "require 'vendor/autoload.php'; echo ErnestoChapon\Rif\Rif::isValid('V113502963') ? '✅ Instalación exitosa!' : '❌ Error';"
 ```
 
 ## 🚀 Uso Rápido
@@ -37,7 +37,7 @@ php -r "require 'vendor/autoload.php'; echo ErnestoCh\Rif\Rif::isValid('V1135029
 
 require_once 'vendor/autoload.php';
 
-use ErnestoCh\Rif\Rif;
+use ErnestoChapon\Rif\Rif;
 
 // Validación simple
 if (Rif::isValid('V113502963')) {
@@ -51,7 +51,7 @@ try {
     echo "Tipo: " . $rif->getType()->getDescription();
     echo "Número: " . $rif->getNumber();
     echo "Dígito verificador: " . $rif->getCheckDigit();
-} catch (ErnestoCh\Rif\Exceptions\RifValidationException $e) {
+} catch (ErnestoChapon\Rif\Exceptions\RifValidationException $e) {
     echo "Error: " . $e->getMessage();
 }
 
@@ -76,8 +76,8 @@ La librería incluye múltiples formateadores para diferentes contextos:
 ```php
 <?php
 
-use ErnestoCh\Rif\Rif;
-use ErnestoCh\Rif\Formatters\RifFormatter;
+use ErnestoChapon\Rif\Rif;
+use ErnestoChapon\Rif\Formatters\RifFormatter;
 
 $rif = Rif::create('J000029679');
 
@@ -112,8 +112,8 @@ Genera RIFs válidos para testing y desarrollo:
 ```php
 <?php
 
-use ErnestoCh\Rif\Rif;
-use ErnestoCh\Rif\Types\RifType;
+use ErnestoChapon\Rif\Rif;
+use ErnestoChapon\Rif\Types\RifType;
 
 // Generar un RIF aleatorio
 $rif = Rif::generate();
@@ -134,7 +134,7 @@ $rif = Rif::generateSequential(42, RifType::NATURAL);
 echo $rif->getRaw(); // V00000042X
 
 // Usar el generador directamente
-use ErnestoCh\Rif\Services\RifGenerator;
+use ErnestoChapon\Rif\Services\RifGenerator;
 
 $rif = RifGenerator::generateOneOfEachType();
 foreach ($rif as $type => $rifInstance) {
@@ -159,8 +159,8 @@ Valida la estructura de un RIF sin verificar el dígito verificador:
 ```php
 <?php
 
-use ErnestoCh\Rif\Rif;
-use ErnestoCh\Rif\Validators\FormatValidator;
+use ErnestoChapon\Rif\Rif;
+use ErnestoChapon\Rif\Validators\FormatValidator;
 
 // Validar estructura completa (pero sin dígito verificador)
 if (Rif::isValidFormat('J123456789')) {
