@@ -1,9 +1,9 @@
 {
-  "name": "ernestoch/rif-php",
+  "name": "ernestochapon/rif-php",
   "description": "Librería PHP para validar, formatear y generar números RIF (Registro de Información Fiscal) de Venezuela",
   "type": "library",
   "license": "MIT",
-  "homepage": "https://github.com/3rn3st0/rif-php",
+  "homepage": "https://github.com/ernestochapon/rif-php",
   "keywords": [
     "rif",
     "venezuela",
@@ -16,7 +16,7 @@
     {
       "name": "Ernesto Chapon",
       "email": "ernestochapon@gmail.com",
-      "homepage": "https://github.com/3rn3st0",
+      "homepage": "https://github.com/ernestochapon",
       "role": "Developer"
     }
   ],
@@ -29,12 +29,12 @@
   },
   "autoload": {
     "psr-4": {
-      "ErnestoCh\\Rif\\": "src/"
+      "ErnestoChapon\\Rif\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "ErnestoCh\\Rif\\Tests\\": "tests/"
+      "ErnestoChapon\\Rif\\Tests\\": "tests/"
     }
   },
   "scripts": {
