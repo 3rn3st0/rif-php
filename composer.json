@@ -1,7 +1,6 @@
 {
   "name": "ernestochapon/rif-php",
   "description": "Librería PHP para validar, formatear y generar números RIF (Registro de Información Fiscal) de Venezuela",
-  "version": "1.0.6",
   "type": "library",
   "license": "MIT",
   "homepage": "https://github.com/ernestochapon/rif-php",
