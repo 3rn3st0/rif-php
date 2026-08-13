@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace ErnestoCh\Rif\Tests\Unit;
+namespace ErnestoChapon\Rif\Tests\Unit;
 
 use PHPUnit\Framework\TestCase;
-use ErnestoCh\Rif\Rif;
-use ErnestoCh\Rif\Services\RifGenerator;
-use ErnestoCh\Rif\Types\RifType;
+use ErnestoChapon\Rif\Rif;
+use ErnestoChapon\Rif\Services\RifGenerator;
+use ErnestoChapon\Rif\Types\RifType;
 
 class RifGeneratorTest extends TestCase
 {

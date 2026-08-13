@@ -2,7 +2,8 @@
 
 require_once 'vendor/autoload.php';
 
-use ErnestoCh\Rif\Rif;
+use ErnestoChapon\Rif\Rif;
+use ErnestoChapon\Rif\Exceptions\RifValidationException;
 
 // Validación simple
 if (Rif::isValid('J123456789')) {
@@ -14,6 +15,6 @@ try {
     $rif = Rif::create('J123456789');
     echo "RIF: " . $rif->getRaw();
     echo "Tipo: " . $rif->getType()->getDescription();
-} catch (ErnestoCh\Rif\Exceptions\RifValidationException $e) {
+} catch (RifValidationException $e) {
     echo "Error: " . $e->getMessage();
 }

@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace ErnestoCh\Rif\Tests\Unit;
+namespace ErnestoChapon\Rif\Tests\Unit;
 
 use PHPUnit\Framework\TestCase;
-use ErnestoCh\Rif\Rif;
-use ErnestoCh\Rif\Exceptions\RifValidationException;
+use ErnestoChapon\Rif\Rif;
+use ErnestoChapon\Rif\Exceptions\RifValidationException;
 
 class RifTest extends TestCase
 {

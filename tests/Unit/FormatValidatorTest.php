@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace ErnestoCh\Rif\Tests\Unit;
+namespace ErnestoChapon\Rif\Tests\Unit;
 
 use PHPUnit\Framework\TestCase;
-use ErnestoCh\Rif\Validators\FormatValidator;
-use ErnestoCh\Rif\Types\RifType;
+use ErnestoChapon\Rif\Validators\FormatValidator;
+use ErnestoChapon\Rif\Types\RifType;
 
 class FormatValidatorTest extends TestCase
 {

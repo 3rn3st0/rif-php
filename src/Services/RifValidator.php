@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace ErnestoCh\Rif\Services;
+namespace ErnestoChapon\Rif\Services;
 
 class RifValidator
 {

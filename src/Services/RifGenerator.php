@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace ErnestoCh\Rif\Services;
+namespace ErnestoChapon\Rif\Services;
 
-use ErnestoCh\Rif\Rif;
-use ErnestoCh\Rif\Types\RifType;
-use ErnestoCh\Rif\Exceptions\RifValidationException;
+use ErnestoChapon\Rif\Rif;
+use ErnestoChapon\Rif\Types\RifType;
+use ErnestoChapon\Rif\Exceptions\RifValidationException;
 
 final class RifGenerator
 {

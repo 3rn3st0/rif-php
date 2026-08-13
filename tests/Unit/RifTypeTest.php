@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace ErnestoCh\Rif\Tests\Unit\Types;
+namespace ErnestoChapon\Rif\Tests\Unit\Types;
 
 use PHPUnit\Framework\TestCase;
-use ErnestoCh\Rif\Types\RifType;
+use ErnestoChapon\Rif\Types\RifType;
 
 class RifTypeTest extends TestCase
 {

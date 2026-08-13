@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace ErnestoCh\Rif\Tests\Unit;
+namespace ErnestoChapon\Rif\Tests\Unit;
 
 use PHPUnit\Framework\TestCase;
-use ErnestoCh\Rif\Rif;
+use ErnestoChapon\Rif\Rif;
 
 class RifAlgorithmTest extends TestCase
 {

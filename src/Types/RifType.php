@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace ErnestoCh\Rif\Types;
+namespace ErnestoChapon\Rif\Types;
 
 enum RifType: string
 {

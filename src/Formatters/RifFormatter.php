@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace ErnestoCh\Rif\Formatters;
+namespace ErnestoChapon\Rif\Formatters;
 
-use ErnestoCh\Rif\Rif;
+use ErnestoChapon\Rif\Rif;
 
 final class RifFormatter
 {

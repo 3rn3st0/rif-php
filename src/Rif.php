@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace ErnestoCh\Rif;
+namespace ErnestoChapon\Rif;
 
-use ErnestoCh\Rif\Exceptions\RifValidationException;
-use ErnestoCh\Rif\Formatters\RifFormatter;
-use ErnestoCh\Rif\Services\RifGenerator;
-use ErnestoCh\Rif\Types\RifType;
-use ErnestoCh\Rif\Validators\FormatValidator;
+use ErnestoChapon\Rif\Exceptions\RifValidationException;
+use ErnestoChapon\Rif\Formatters\RifFormatter;
+use ErnestoChapon\Rif\Services\RifGenerator;
+use ErnestoChapon\Rif\Types\RifType;
+use ErnestoChapon\Rif\Validators\FormatValidator;
 
 final class Rif
 {

@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace ErnestoCh\Rif\Validators;
+namespace ErnestoChapon\Rif\Validators;
 
-use ErnestoCh\Rif\Types\RifType;
+use ErnestoChapon\Rif\Types\RifType;
 
 final class FormatValidator
 {
