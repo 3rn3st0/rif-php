@@ -13,7 +13,7 @@ final class RifGenerator
     /**
      * Genera un RIF válido aleatorio del tipo especificado
      */
-    public static function generate(RifType $type = null): Rif
+    public static function generate(?RifType $type = null): Rif
     {
         $type = $type ?? self::randomType();
 
@@ -28,7 +28,7 @@ final class RifGenerator
     /**
      * Genera un RIF válido basado en un número específico
      */
-    public static function fromNumber(string $number, RifType $type = null): Rif
+    public static function fromNumber(string $number, ?RifType $type = null): Rif
     {
         $type = $type ?? RifType::LEGAL;
 
@@ -48,7 +48,7 @@ final class RifGenerator
     /**
      * Genera múltiples RIFs válidos
      */
-    public static function generateMultiple(int $count, RifType $type = null): array
+    public static function generateMultiple(int $count, ?RifType $type = null): array
     {
         if ($count < 1 || $count > 1000) {
             throw new \InvalidArgumentException('El conteo debe estar entre 1 y 1000');
@@ -78,7 +78,7 @@ final class RifGenerator
     /**
      * Genera un RIF válido secuencial (útil para testing)
      */
-    public static function generateSequential(int $sequence, RifType $type = null): Rif
+    public static function generateSequential(int $sequence, ?RifType $type = null): Rif
     {
         $type = $type ?? RifType::LEGAL;
 
